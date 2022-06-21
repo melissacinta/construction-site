@@ -1,14 +1,13 @@
-import { ChevronRightIcon, ExternalLinkIcon } from '@heroicons/react/solid';
-import { features, blogPosts } from 'utils/sample-data';
 import Header from './Header';
 import Footer from './Footer';
 import About from './Cta';
-import Blog from './Blog';
+import Project from './Project';
 import Testimonials from './Testimonials';
 import Hero from './Hero';
 import FeatureWithGrid from './FeatureWithGrid';
-import FeatureWithScreenShot from './FeatureWithScreenShot';
 import ContactUs from './Contact';
+import VisionMission from './VisionMission';
+import OurMd from './OurMd';
 
 export default function Cray() {
   return (
@@ -22,14 +21,18 @@ export default function Cray() {
 
           {/* Feature section with grid */}
           <FeatureWithGrid />
-          {/* Testimonial section */}
-          <Testimonials />
 
           {/* Blog section */}
-          <Blog />
+          <Project />
 
           {/* About Section */}
           <About />
+
+          {/* OurMd section */}
+          <OurMd />
+
+          {/* Vision and Mission section */}
+          <VisionMission />
 
           {/* AContactbout Section */}
           <ContactUs />

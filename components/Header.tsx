@@ -1,9 +1,12 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { navigation } from 'utils/sample-data';
+import { classNames } from 'utils/classNames';
 
 export default function Header() {
+  const [active, setActive] = useState('');
+
   return (
     <Popover as="header" className="sticky top-0 z-40">
       <div className="bg-gray-900 py-6">
@@ -33,7 +36,11 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-white hover:text-[#C08F28]"
+                  onClick={() => setActive(item.name)}
+                  className={classNames(
+                    active === item.name ? 'text-[#C08F28]' : 'text-white',
+                    'text-base font-medium transition-colors hover:text-[#C08F28]'
+                  )}
                 >
                   {item.name}
                 </a>
