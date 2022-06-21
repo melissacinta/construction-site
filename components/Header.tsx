@@ -67,9 +67,9 @@ export default function Header() {
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
-                  alt=""
+                  className="h-8 w-auto sm:h-10"
+                  src="/images/cray2.jpeg"
+                  alt="CRAY CONSTRUCTION NIGERIA LTD"
                 />
               </div>
               <div className="-mr-2">
