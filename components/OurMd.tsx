@@ -46,11 +46,11 @@ const OurMd = () => {
             <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
               <img
                 className="absolute inset-0 h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+                src="images/ceo.jpeg"
                 alt=""
               />
-              <div className="absolute inset-0 bg-[#111827] mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-[#111827] opacity-80" />
+              <div className="absolute inset-0 bg-[#1118275f] mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-[#111827] opacity-90" />
               <div className="relative px-8">
                 <div className="font-extraBold text-2xl tracking-tight text-white">
                   Emmanuel Raphael George

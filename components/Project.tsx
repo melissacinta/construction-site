@@ -1,10 +1,10 @@
-import { ChevronRightIcon, ExternalLinkIcon } from '@heroicons/react/solid';
-import { features, blogPosts } from 'utils/sample-data';
-import Header from './Header';
-import Footer from './Footer';
-import Cta from './Cta';
+import { useState } from 'react';
+import { blogPosts } from 'utils/sample-data';
+import Modal from './Modal';
 
 export default function Projects() {
+  const [open, setOpen] = useState(false);
+  const [gallery, setGallery] = useState(null);
   return (
     <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32" id="portfolio">
       <div className="relative">
@@ -24,9 +24,17 @@ export default function Projects() {
               key={post.id}
               className="flex flex-col overflow-hidden rounded-lg shadow-lg"
             >
-              <div className="flex-shrink-0">
+              <div
+                className="flex-shrink-0 cursor-pointer overflow-hidden"
+                onClick={() => {
+                  if (post.gallery) {
+                    setGallery(post);
+                    setOpen(true);
+                  }
+                }}
+              >
                 <img
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover transition-all hover:scale-150"
                   src={post.imageUrl}
                   alt=""
                 />
@@ -44,6 +52,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <Modal open={open} setOpen={setOpen} gallery={gallery} />
     </div>
   );
 }

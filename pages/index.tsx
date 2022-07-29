@@ -5,6 +5,7 @@ const IndexPage = () => (
   <>
     <Head>
       <title>Cray Construction Nigeria LTD</title>
+      <link rel="shortcut icon" href="/images/cray.png" />
     </Head>
     <Cray />
   </>
