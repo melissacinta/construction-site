@@ -71,6 +71,7 @@ export const blogPosts = [
       'images/heritage-place3.jpg',
       'images/heritage-place4.jpg',
     ],
+    preview: 'Supervised by Emmanuel Raphael under ITB Nig Limited',
   },
   {
     id: 2,
@@ -85,6 +86,7 @@ export const blogPosts = [
       'images/azuri-pen3.jpg',
       'images/azuri-pen4.jpg',
     ],
+    preview: 'Supervised by Emmanuel Raphael under ITB Nig Limited',
   },
   {
     id: 3,
@@ -100,6 +102,7 @@ export const blogPosts = [
       'images/kuramo6.jpg',
       'images/kuramo7.jpg',
     ],
+    preview: 'Supervised by Emmanuel Raphael under ITB Nig Limited',
   },
   {
     id: 4,
@@ -113,6 +116,7 @@ export const blogPosts = [
       'images/bishops-court5.jpeg',
       'images/bishops-court6.jpeg',
     ],
+    preview: 'Supervised by Emmanuel Raphael under TELISOL Nig Limited',
   },
   {
     id: 5,
@@ -128,12 +132,14 @@ export const blogPosts = [
       'images/cpp6.jpg',
       'images/cpp7.jpg',
     ],
+    preview: 'Supervised by Emmanuel Raphael under ITB Nig Limited',
   },
   {
     id: 6,
     title: 'LAPAZ APARTMENT, Musa yaradua street, victoria island Lagos.',
     imageUrl: 'images/lapaz.png',
     gallery: ['images/lapaz.png', 'images/lapaz2.png'],
+    preview: 'Supervised by Emmanuel Raphael under Arkland structures limited',
   },
 ];
 export const footerNavigation = {
